@@ -1,0 +1,1042 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menuDivWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    width: 0;
+    height: 100vh;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.open {
+    width: 45vw;
+}
+
+.playmate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    opacity: 0.7;
+    display: none;
+    z-index: 9000;
+}
+
+.open2 {
+    display: block;
+}
+
+.menuDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+.divLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: rgb(42, 5, 5);
+    text-decoration: none;
+    border-bottom: 1px solid rgb(42, 5, 5);
+}
+
+.divLinks:hover {
+    color: hotpink;
+}
+
+.close {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: hotpink;
+}
+
+.homePic {
+    height: 1000px;
+    max-width: 100vw;
+    background: url(../assets/pic3.jpg) 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#header1 {
+    height: 30px;
+    background-color: rgb(42, 5, 5);
+    color: white;
+    overflow: hidden;
+    z-index: 5000;
+    width: 100vw;
+}
+
+#news1 {
+    animation-name: newsSwitcher;
+    margin-top: 30px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.news {
+    font-size: 16px;
+    font-weight: 400;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes newsSwitcher {
+    0% {
+        margin-top: 0px;
+    }
+
+    30% {
+        margin-top: 0px;
+    }
+
+    33% {
+        margin-top: -30px;
+    }
+
+    63% {
+        margin-top: -30px;
+    }
+
+    66% {
+        margin-top: -60px;
+    }
+
+    97% {
+        margin-top: -60px;
+    }
+
+    100% {
+        margin-top: -90px;
+    }
+}
+
+@keyframes tab-animation {
+    0% {
+        margin-top: 0px;
+    }
+
+    30% {
+        margin-top: 0px;
+    }
+
+    33% {
+        margin-top: -60px;
+    }
+
+    63% {
+        margin-top: -60px;
+    }
+
+    66% {
+        margin-top: -120px;
+    }
+
+    97% {
+        margin-top: -120px;
+    }
+
+    100% {
+        margin-top: -180px;
+    }
+}
+
+#header2 {
+    top: 30px;
+    height: 60px;
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    z-index: 6000;
+}
+
+
+#logoImage2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(207, 170, 170);
+    border-radius: 5px;
+    fill: rgb(109, 29, 29);
+    cursor: pointer;
+}
+
+#menu {
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#explore {
+    font-size: medium;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 90vh;
+    right: 50px;
+}
+
+.creamyCakes {
+    position: absolute;
+    width: 40%;
+    top: 25%;
+    left: 80px;
+    color: black;
+}
+
+.bakedFresh {
+    position: absolute;
+    width: 85vw;
+    bottom: 10%;
+    left: 80px;
+}
+
+.bakedDaily {
+    display: block;
+    color: black;
+    font-weight: 600;
+    font-size: clamp(70px, 8vw, 90px)
+}
+
+.bakedDaily-small {
+    display: none;
+}
+
+.message {
+    position: absolute;
+    right: 20vw;
+    bottom: 80px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call {
+    width: 35px;
+    height: 35px;
+}
+
+.herself {
+    background-color: #fff5e9;
+}
+
+.herself {
+    padding: 100px 50px 0 50px;
+}
+
+.hannahDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.herself-pic-talk {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 720px;
+}
+
+#hannah {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#logo2 {
+    width: 60%;
+}
+
+.selfPic {
+    margin-top: 50px;
+    height: 70%;
+    width: 490px;
+    background: url(../assets/homePic1.jpg) 80% 0;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.selfTalk {
+    margin-top: 50px;
+    height: 70%;
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.talkTitle {
+    display: block;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.talkTalk {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.products {
+    padding-top: 20px;
+    background-color: #fff5e9;
+}
+
+.proHeader {
+    font-size: clamp(30px, 8vw, 50px);
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.proHeader p {
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.pwrapper {
+    margin-top: 10px;
+    padding: 40px 80px;
+}
+
+.pheading {
+    font-size: xx-large;
+    font-weight: 700;
+    margin: 15px 0;
+    height: 40px;
+    overflow: hidden;
+}
+
+.pheading span {
+    display: block;
+}
+
+.pgallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    height: 770px;
+}
+
+.pcontent1,
+.pcontent2,
+.pcontent3 {
+    width: 430px;
+    height: 340px;
+    background-color: grey;
+    margin: 0 20px 0 20px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 7px;
+}
+
+.contentCard {
+    background-color: black;
+    opacity: 0.8;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 7px 7px 0 0;
+}
+
+.contentCard a {
+    color: hotpink;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contentCard a:hover {
+    color: white;
+}
+
+.cards22 a {
+    color: hotpink;
+}
+
+.cards22 a:hover {
+    color: white;
+}
+
+#cont1 {
+    background: url(../assets/bcake3.jpg)0 80%;
+    background-size: cover;
+}
+
+#cont2 {
+    background: url(../assets/bcake2.jpg) 0 40%;
+    background-size: cover;
+}
+
+#cont3 {
+    background: url(../assets/bcake11.jpg) 0 40%;
+    background-size: cover;
+}
+
+
+
+#cont12 {
+    background: url(../assets/wcake11.jpg) 0 40%;
+    background-size: cover;
+}
+
+#cont22 {
+    background: url(../assets/wcake31.jpg) 0 30%;
+    background-size: cover;
+}
+
+#cont32 {
+    background: url(../assets/wcake5.jpg) 0 50%;
+    background-size: cover;
+}
+
+
+
+
+#cont13 {
+    background: url(../assets/ccake3.jpg);
+    background-size: cover;
+}
+
+#cont23 {
+    background: url(../assets/t61.jpg) 0 40%;
+    background-size: cover;
+}
+
+#cont33 {
+    background: url(../assets/ccake2.jpg) 0 40%;
+    background-size: cover;
+}
+
+
+
+
+#cont14 {
+    background: url(../assets/pcake2.jpg) 0 40%;
+    background-size: cover;
+}
+
+#cont24 {
+    background: url(../assets/pcake1.jpg) 0 40%;
+    background-size: cover;
+}
+
+
+
+#cont55 {
+    background-color: rgb(188, 132, 142);
+    border-radius: 7px;
+    height: fit-content;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+}
+
+#cont55 a {
+    color: white;
+}
+
+#cont55 a:hover {
+    color: rgb(84, 69, 69);
+}
+
+footer {
+    background-color: black;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px 80px 10px 80px;
+    flex-wrap: wrap;
+}
+
+.bday {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-tight {
+    width: 100%;
+}
+
+.bday h1 {
+    text-transform: uppercase;
+}
+
+.f-span {
+    margin-top: 10px;
+}
+
+.bday span {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.bday input {
+    margin-top: 20px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    border: none;
+    display: block;
+}
+
+.bday #submit {
+    margin-top: 20px;
+    width: 100%;
+    align-self: center;
+    background-color: pink;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.bday #submit:hover {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.bday input:focus {
+    outline: none;
+    border: none;
+}
+
+.contactUs {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactUs a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.contactUs a:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.contactUs a:hover {
+    color: pink;
+    transform: scale(1.2);
+}
+
+.socialLinks {
+    width: 35px;
+    filter: invert(1);
+}
+
+.shopCakes {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shopCakes a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.shopCakes a:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.shopCakes a:hover {
+    color: pink;
+}
+
+.shopTreats {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shopTreats a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.shopTreats a:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.shopTreats a:hover {
+    color: pink;
+}
+
+.me {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.me p {
+    display: inline;
+}
+
+.me a {
+    color: pink;
+}
+
+.me a:hover {
+    color: white;
+}
+
+
+.home-small {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1049px) {
+
+    .pcontent1,
+    .pcontent2,
+    .pcontent3 {
+        width: 40%;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+
+    .pcontent1,
+    .pcontent2,
+    .pcontent3 {
+        height: 160px;
+    }
+
+    .pgallery {
+        height: 680px;
+    }
+
+    #hannah {
+        font-size: clamp(20px, 6vw, 40px);
+
+    }
+
+    .talkTitle {
+        font-size: clamp(20px, 6vw, 40px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #explore {
+        display: none;
+    }
+
+    .homePic {
+        background: url(../assets/t31.jpg);
+        background-size: cover;
+        height: 850px;
+    }
+
+    .home-small {
+        display: block;
+    }
+
+    #header1 {
+        height: 60px;
+    }
+
+    #news1 {
+        margin-top: 60px;
+        animation-name: tab-animation;
+    }
+
+    .news {
+        height: 60px;
+    }
+
+    #header2 {
+        top: 60px;
+    }
+
+    .pwrapper {
+        padding: 40px 20px;
+    }
+
+    .pcontent1,
+    .pcontent2,
+    .pcontent3 {
+        width: 320px;
+        height: 200px;
+    }
+
+    .pgallery {
+        height: 620px;
+    }
+
+    .herself-pic-talk {
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .selfTalk {
+        position: absolute;
+        right: 0;
+        bottom: 15%;
+        background-color: peachpuff;
+        width: 70%;
+        height: fit-content;
+        flex-direction: column;
+        border-radius: 7px;
+    }
+
+    .creamyCakes {
+        left: 20px;
+        width: 75%;
+    }
+
+    .bakedFresh {
+        left: 20px;
+        right: 50px;
+    }
+
+    .pcontent1 {
+        margin: 0;
+    }
+
+    .footer {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .shopCakes,
+    .shopTreats {
+        display: none;
+    }
+
+    .bday {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bday span {
+        margin-top: 0;
+    }
+
+    .bday input {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    #mailinput {
+        margin-top: 10px;
+    }
+
+    .bday #submit {
+        width: 100%;
+    }
+
+    .contactUs {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .contactUs a:nth-of-type(1) {
+        margin-top: 0;
+    }
+
+    .contactUs h2 {
+        display: none;
+    }
+
+    .f-h1 {
+        width: 40%;
+    }
+
+    .f-span {
+        width: 28%;
+    }
+
+    .footer-tight {
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    .pcontent1,
+    .pcontent2,
+    .pcontent3 {
+        height: 160px;
+        width: 260px;
+    }
+
+    .pgallery {
+        height: 590px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homePic {
+        height: 750px;
+    }
+
+    #header2 {
+        padding: 30px 10px;
+    }
+
+    .selfTalk {
+        width: 90%;
+    }
+
+    .herself {
+        padding: 100px 20px 0 20px;
+    }
+
+    .proHeader {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .pcontent1,
+    .pcontent2,
+    .pcontent3 {
+        width: 90%;
+        height: clamp(50px, 250px, 300px);
+    }
+
+    .pgallery {
+        height: 1000px;
+    }
+
+    .p-small {
+        height: 680px;
+    }
+
+    .message {
+        display: none;
+    }
+
+    .bakedFresh {
+        left: 10px;
+        right: 10px;
+        width: 95%;
+    }
+
+    .creamyCakes {
+        left: 10px;
+        right: 10px;
+    }
+
+    .pheading {
+        height: fit-content;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .bday {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .bday h1 {
+        font-size: x-large;
+    }
+
+    .f-h1,
+    .f-span,
+    .footer-tight {
+        width: 100%;
+    }
+
+    .f-span {
+        margin-top: 10px;
+    }
+
+    .footer-tight {
+        margin-top: 20px;
+    }
+
+    .contactUs {
+        width: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0;
+    }
+
+    .contactUs a {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    .bakedDaily {
+        display: none;
+    }
+
+    .bakedDaily-small {
+        display: block;
+        font-size: clamp(50px, 6vw, 70px);
+    }
+}
+
+@media only screen and (max-width: 496px) {
+    #menu {
+        width: 37px;
+        height: 37px;
+    }
+
+    #logoImage2 {
+        width: 45px;
+        height: 45px;
+    }
+
+    .homePic {
+        height: 550px;
+    }
+
+    .creamyCakes h2 {
+        font-size: large;
+    }
+
+    .h2-small {
+        display: none;
+    }
+
+    .creamyCakes {
+        top: 35%;
+        width: 95%;
+    }
+
+    .pcontent1,
+    .pcontent2,
+    .pcontent3 {
+        width: 90%;
+        height: clamp(150px, 234px, 250px);
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .bakedDaily-small {
+        font-size: xx-large;
+    }
+
+    .homePic {
+        height: 400px;
+    }
+
+    .creamyCakes h2 {
+        font-size: medium;
+    }
+
+    .pcontent1,
+    .pcontent2,
+    .pcontent3 {
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .bday {
+        width: 70%;
+    }
+
+    .bday h1 {
+        font-size: large;
+    }
+
+    .pcontent1,
+    .pcontent2,
+    .pcontent3 {
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 285px) {
+    .homePic {
+        height: 320px;
+    }
+}

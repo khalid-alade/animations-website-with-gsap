@@ -1,0 +1,66 @@
+  .btn{
+    background: black;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.7s ease;
+  }
+  .btnWhite:hover {
+    transform: scale(1.05);
+    /* animation: ripple 1.5s linear infinite; */
+    animation-name: rippleWhite;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+  .btnWhite:focus {
+    outline: none;
+  }
+  @keyframes rippleWhite {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 3px rgba(255, 255, 255, 0.3), 0 0 0 5px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 4px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+  }
+
+
+
+
+  .btnBlack:hover {
+    transform: scale(1.05);
+    /* animation: ripple 1.5s linear infinite; */
+    animation-name: rippleBlack;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+  .btnBlack:focus {
+    outline: none;
+  }
+  @keyframes rippleBlack {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(0, 0, 0, 0.3), 0 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3), 0 0 0 4px rgba(0, 0, 0, 0.3), 0 0 0 20px rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+  }
+  .hoverlessRipple{
+    transform: scale(1.05);
+    /* animation: ripple 1.5s linear infinite; */
+    animation-name: rippleBlack;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    border-radius: 200%;
+  }
+
+
+  
+      
