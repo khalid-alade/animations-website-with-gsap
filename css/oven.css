@@ -189,7 +189,7 @@
 #logoImage2 {
     width: 50px;
     height: 50px;
-    background-color: rgb(207, 170, 170);
+    background-color: pink;
     border-radius: 5px;
     fill: rgb(109, 29, 29);
     cursor: pointer;
@@ -333,6 +333,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    text-align: center;
 }
 
 .proHeader p {
@@ -365,14 +366,14 @@
     flex-wrap: wrap;
     overflow: hidden;
     width: 100%;
-    height: 770px;
+    height: 500px;
 }
 
 .pcontent1,
 .pcontent2,
 .pcontent3 {
-    width: 430px;
-    height: 340px;
+    width: 380px;
+    height: 250px;
     background-color: grey;
     margin: 0 20px 0 20px;
     display: flex;
@@ -419,7 +420,7 @@
 }
 
 #cont2 {
-    background: url(../assets/bcake2.jpg) 0 40%;
+    background: url(../assets/bcake11.jpg) 0 40%;
     background-size: cover;
 }
 
@@ -592,6 +593,11 @@ footer {
     transform: scale(1.2);
 }
 
+a svg {
+    width: 34px;
+    height: 34px;
+}
+
 .socialLinks {
     width: 35px;
     filter: invert(1);
@@ -691,12 +697,11 @@ footer {
     }
 
     .pgallery {
-        height: 680px;
+        height: 320px;
     }
 
     #hannah {
-        font-size: clamp(20px, 6vw, 40px);
-
+        font-size: clamp(32px, 6vw, 40px);
     }
 
     .talkTitle {
@@ -712,7 +717,15 @@ footer {
     .homePic {
         background: url(../assets/t31.jpg);
         background-size: cover;
-        height: 850px;
+        height: 910px;
+    }
+
+    .creamyCakes {
+        color: rgb(234, 184, 144);
+    }
+
+    .bakedDaily {
+        color: rgb(241, 222, 206);
     }
 
     .home-small {
@@ -748,7 +761,7 @@ footer {
     }
 
     .pgallery {
-        height: 620px;
+        height: 400px;
     }
 
     .herself-pic-talk {
@@ -841,6 +854,11 @@ footer {
     .footer-tight {
         width: 28%;
     }
+
+    a svg {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -853,17 +871,22 @@ footer {
     }
 
     .pgallery {
-        height: 590px;
+        height: 450px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .homePic {
-        height: 750px;
+        height: 800px;
+    }
+
+    #header1 {
+        display: none;
     }
 
     #header2 {
         padding: 30px 10px;
+        top: 0;
     }
 
     .selfTalk {
@@ -876,7 +899,6 @@ footer {
 
     .proHeader {
         padding: 0 20px;
-        text-align: center;
     }
 
     .pcontent1,
@@ -887,11 +909,7 @@ footer {
     }
 
     .pgallery {
-        height: 1000px;
-    }
-
-    .p-small {
-        height: 680px;
+        height: 640px;
     }
 
     .message {
@@ -948,7 +966,7 @@ footer {
     }
 
     .contactUs a {
-        margin-top: 40px;
+        margin-top: 45px;
     }
 }
 
@@ -957,9 +975,13 @@ footer {
         display: none;
     }
 
+    .creamyCakes {
+        top: 28%;
+    }
+
     .bakedDaily-small {
         display: block;
-        font-size: clamp(50px, 6vw, 70px);
+        font-size: clamp(50px, 7vw, 70px);
     }
 }
 
@@ -974,12 +996,8 @@ footer {
         height: 45px;
     }
 
-    .homePic {
-        height: 550px;
-    }
-
     .creamyCakes h2 {
-        font-size: large;
+        font-size: x-large;
     }
 
     .h2-small {
@@ -987,7 +1005,6 @@ footer {
     }
 
     .creamyCakes {
-        top: 35%;
         width: 95%;
     }
 
@@ -997,19 +1014,23 @@ footer {
         width: 90%;
         height: clamp(150px, 234px, 250px);
     }
+
+    .pgallery {
+        height: 560px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
     .bakedDaily-small {
-        font-size: xx-large;
+        font-size: 45px;
     }
 
     .homePic {
-        height: 400px;
+        height: 670px;
     }
 
     .creamyCakes h2 {
-        font-size: medium;
+        font-size: large;
     }
 
     .pcontent1,
@@ -1017,9 +1038,28 @@ footer {
     .pcontent3 {
         height: 180px;
     }
+
+    #hannah {
+        font-size: clamp(20px, 8vw, 40px);
+    }
+
+    .proHeader h1 {
+        font-size: clamp(35px, 8vw, 40px);
+    }
+
+    #one,
+    #two,
+    #three,
+    #four {
+        font-size: clamp(25px, 8vw, 40px);
+    }
 }
 
 @media only screen and (max-width: 330px) {
+    .bakedDaily-small {
+        font-size: clamp(35px, 7vw, 45px);
+    }
+
     .bday {
         width: 70%;
     }
@@ -1033,10 +1073,8 @@ footer {
     .pcontent3 {
         height: 140px;
     }
-}
 
-@media only screen and (max-width: 285px) {
-    .homePic {
-        height: 320px;
+    .pgallery {
+        height: 430px;
     }
 }
