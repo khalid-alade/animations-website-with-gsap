@@ -721,11 +721,11 @@ a svg {
     }
 
     .creamyCakes {
-        color: rgb(86, 39, 3);
+        color: rgb(236, 165, 107);
     }
 
     .bakedDaily {
-        color: rgb(86, 39, 3);
+        color: rgb(224, 176, 136);
     }
 
     .home-small {
@@ -982,6 +982,8 @@ a svg {
     .bakedDaily-small {
         display: block;
         font-size: clamp(50px, 7vw, 70px);
+        font-family: Helvetica;
+        font-weight: 900;
     }
 }
 
@@ -1022,7 +1024,7 @@ a svg {
 
 @media only screen and (max-width: 375px) {
     .bakedDaily-small {
-        font-size: 45px;
+        font-size: 47px;
     }
 
     .homePic {
