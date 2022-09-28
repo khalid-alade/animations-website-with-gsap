@@ -47,7 +47,6 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    /* height: max-content; */
     width: 100%;
     padding-bottom: 30px;
     padding-right: 15px;
@@ -407,7 +406,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* border-radius: 7px 7px 0 0; */
 }
 
 .contentCard a {
@@ -729,16 +727,13 @@ a svg {
     }
 
     .homePic {
-        /* background: url(../assets/cake-portrait2.jpg); */
         background-image: none;
         background-size: cover;
         height: 910px;
-        /* height: max-content; */
     }
     .image-mobile{
         opacity: 1;
         transform: scale(1.53);
-        /* width: 100%; */
         height: 100%;
     }
 
@@ -952,7 +947,6 @@ a svg {
         right: 20px;
         width: 95%;
         top: 12%;
-        /* font-family: Arial, Helvetica, sans-serif; */
     }
     .bakedDaily-small {
         display: block;
