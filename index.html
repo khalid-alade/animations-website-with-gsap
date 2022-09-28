@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hannah's_oven</title>
-    <link rel="stylesheet" href="css/oven.css">
     <link rel="stylesheet" href="css/ripple.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="css/oven.css">
 </head>
 
 <body>
@@ -19,9 +23,9 @@
             <a href="#" class="divLinks">
                 <p>Shop All</p>
             </a>
-            <a href="#" class="divLinks">
+            <!-- <a href="#" class="divLinks">
                 <p>Location</p>
-            </a>
+            </a> -->
             <a href="#" class="divLinks">
                 <p>Gallery</p>
             </a>
@@ -66,27 +70,45 @@
                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                 stroke-linejoin="round">
                 <path id="menu-path" stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <line x1="4" y1="6" x2="20" y2="6" />
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <line x1="4" y1="18" x2="20" y2="18" />
+                <line id="menu-path2" x1="4" y1="6" x2="20" y2="6" />
+                <line id="menu-path3" x1="4" y1="12" x2="20" y2="12" />
+                <line id="menu-path4" x1="4" y1="18" x2="20" y2="18" />
             </svg>
 
         </header>
+        <img class="image-mobile" src="assets/cake-portrait2.jpg" alt="">
+
         <span id="explore">Scroll to explore</span>
 
         <div class="creamyCakes">
             <h2>
                 Creamy Strawberry Shortcake Cake, iconic cakes, cake truffles, cookies, ice cream, donuts and more!
             </h2>
-            <h2 class="h2-small">
-                We make your treats fresh and flash-freeze 'em for peak quality.
+        </div>
+
+
+        <div class="creamyCakesMobile">
+            <h2 class="h2mobile">
+                iconic cakes,
+                <!-- <br> -->
+                ice cream, cookies,
+                <!-- <br> -->
+                strawberry shortcakes,
+                <br>
+                donughts and more
             </h2>
         </div>
 
+
         <div class="bakedFresh">
             <span class="bakedDaily">Fresh,<br>Oven-Baked<br>Daily.</span>
-            <span class="bakedDaily bakedDaily-small">Fresh, <br> Oven-Baked <br> Daily.</span>
+
         </div>
+
+        <div class="bakedFreshMobile">
+            <span class="bakedDaily-small">Fresh,<br>Oven-Baked Daily.</span>
+        </div>
+
 
         <span class="message hoverlessRipple"><a href="#">
                 <svg class="call" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"

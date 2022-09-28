@@ -16,6 +16,8 @@ var tlcontent4 = gsap.timeline()
 
 tl1.to(".creamyCakes", { top: -250 + "%", ease: Linear.easeNone }, 'start')
     .to(".bakedFresh", { bottom: 110 + "%", ease: Linear.easeNone }, 'start')
+    .to(".creamyCakesMobile", { top: -110 + "%", ease: Linear.easeNone }, 'start')
+    .to(".bakedFreshMobile", { top: -250 + "%", ease: Linear.easeNone }, 'start')
 
 tl2.from("#hannah", { duration: 0.5, y: 100 + '%' })
 tlone.from("#one", { duration: 0.5, y: 140 + '%' })

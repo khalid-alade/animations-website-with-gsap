@@ -13,13 +13,17 @@
     z-index: 10000;
     width: 0;
     height: 100vh;
-    background-color: white;
+    background-color: rgb(223, 178, 178);
     overflow-x: hidden;
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .open {
-    width: 45vw;
+    width: 40vw;
 }
 
 .playmate {
@@ -43,8 +47,10 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    height: 100%;
+    /* height: max-content; */
     width: 100%;
+    padding-bottom: 30px;
+    padding-right: 15px;
 
 }
 
@@ -54,27 +60,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
+    font-weight: bold;
     color: rgb(42, 5, 5);
     text-decoration: none;
-    border-bottom: 1px solid rgb(42, 5, 5);
+    margin-top: 50px;
 }
 
 .divLinks:hover {
-    color: hotpink;
+    color: rgb(188, 25, 25);
 }
 
 .close {
-    position: relative;
-    top: 20px;
-    left: 20px;
+    margin-top: 20px;
     font-size: 30px;
     font-weight: 700;
     cursor: pointer;
 }
 
 .close:hover {
-    color: hotpink;
+    color: rgb(188, 25, 25);
 }
 
 .homePic {
@@ -86,6 +90,9 @@
     background-position: left;
     overflow: hidden;
     position: relative;
+}
+.image-mobile{
+    opacity: 0;
 }
 
 #header1 {
@@ -220,7 +227,13 @@
     left: 80px;
     color: black;
 }
-
+.creamyCakesMobile{
+    display: none;
+}
+.h2mobile{
+    font-size: 25px;
+    color: #411a05;
+}
 .bakedFresh {
     position: absolute;
     width: 85vw;
@@ -234,7 +247,9 @@
     font-weight: 600;
     font-size: clamp(70px, 8vw, 90px)
 }
-
+.bakedFreshMobile{
+    display: none;
+}
 .bakedDaily-small {
     display: none;
 }
@@ -716,9 +731,17 @@ a svg {
     }
 
     .homePic {
-        background: url(../assets/t31.jpg);
+        /* background: url(../assets/cake-portrait2.jpg); */
+        background-image: none;
         background-size: cover;
         height: 910px;
+        /* height: max-content; */
+    }
+    .image-mobile{
+        opacity: 1;
+        transform: scale(1.53);
+        /* width: 100%; */
+        height: 100%;
     }
 
     .creamyCakes {
@@ -880,7 +903,12 @@ a svg {
     .homePic {
         height: 800px;
     }
-
+    .image-mobile{
+        transform: scale(1.25);
+    }
+    .open {
+        width: 60vw;
+    }
     #header1 {
         display: none;
     }
@@ -916,16 +944,36 @@ a svg {
     .message {
         display: none;
     }
-
-    .bakedFresh {
-        left: 10px;
-        right: 10px;
-        width: 95%;
+    .bakedFresh{
+        display: none;
     }
-
+    .bakedFreshMobile {
+        display: block;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        width: 95%;
+        top: 12%;
+        /* font-family: Arial, Helvetica, sans-serif; */
+    }
+    .bakedDaily-small {
+        display: block;
+        font-size: clamp(50px, 7vw, 70px);
+        color: #5e2608;
+        font-family: Helvetica;
+        font-weight: 900;
+    }
     .creamyCakes {
-        left: 10px;
-        right: 10px;
+        display: none;
+    }
+    .creamyCakesMobile {
+        display: block;
+        position: absolute;
+        width: 90%;
+        color: black;
+        left: 20px;
+        right: 20px;
+        bottom: 10%;
     }
 
     .pheading {
@@ -980,11 +1028,10 @@ a svg {
         top: 24%;
     }
 
-    .bakedDaily-small {
-        display: block;
-        font-size: clamp(50px, 7vw, 70px);
-        font-family: Helvetica;
-        font-weight: 900;
+}
+@media only screen and (max-width: 540px) {
+    .image-mobile{
+        transform: unset;
     }
 }
 
